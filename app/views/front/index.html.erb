@@ -1,0 +1,19 @@
+<div class="row">
+<% @articles.each do |article| %>
+<div class="col-md-4">
+<div class="panel panel-primary">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><%= article.title %></div>
+  <div class="panel-body">
+    <div class="img">
+      <%= image_tag article.img.url %>
+    </div>
+    
+    <p>
+      <%= article.description %>
+    </p>
+  </div>
+</div>
+</div>
+<% end %>
+</div>
